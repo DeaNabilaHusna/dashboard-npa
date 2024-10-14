@@ -1,0 +1,32 @@
+@import '../css/variables';
+
+.alert{
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.alert-box{
+    border: solid 1px $primary-color;
+    margin: 1rem;
+    background-color: $primary-color;
+    flex-grow: 1; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-box p{
+    text-align: center;
+    color: $secondary-color;
+    padding: 2rem;
+}
+
+.table{
+    border: solid 1px $primary-color;
+    margin: 1rem 0;
+    display: grid;
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,9 @@
+@import '../css/variables';
+
+.qualitysec
+ {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem 1rem;
+    grid-template-columns: repeat(2, 1fr); 
+}

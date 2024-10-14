@@ -1,0 +1,85 @@
+@import "../css/variables";
+
+.matrix {
+  margin: 0 1rem 0 0;
+}
+.table {
+  display: grid;
+  // row-gap: 1rem;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0;
+}
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.coba{
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 0.5rem 0;
+  // border: 1px solid #ccc;
+  border: none;
+  color: $secondary-color;
+}
+
+.styled-table th {
+  background-color: $danger-color;
+  color: $secondary-color;
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+.styled-table thead tr:nth-child(1) th {
+  background-color: $danger-color;
+  color: $secondary-color;
+}
+
+.styled-table thead tr:nth-child(2) th {
+  background-color: $warning-color;
+}
+
+.styled-table .utilization {
+  background-color: $danger-color;
+  color: $secondary-color;
+}
+
+.styled-table td {
+  font-size: 14px;
+  color: $primary-color;
+}
+
+.styled-table .negative {
+  color: $danger-color;
+}
+
+.styled-table td[colspan="2"] {
+  background-color: $warning-color;
+}
+
+.styled-table td[colspan="3"] {
+  background-color: $success-color;
+  color: $secondary-color;
+}
+
+.styled-table td.positive {
+  color: $success-color;
+}
+
+.coba {
+  display: inline-block;
+  margin: auto;
+  border: 1px solid #ccc;
+  width: fit-content;
+  background-color: rgb(229, 224, 224);
+}

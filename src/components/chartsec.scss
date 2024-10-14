@@ -1,0 +1,33 @@
+@import '../css/variables';
+
+.box{
+    padding: 0.5rem;
+    margin: 0rem;
+    min-height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-weight: 600;
+}
+
+th {
+    text-align: center; 
+    padding: 15px; 
+    border-bottom: 3px solid $primary-color; 
+}
+
+td {
+    text-align: center; 
+    padding: 15px; 
+    border: none; 
+    
+}
+.chart-container {
+    overflow-x: auto;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}

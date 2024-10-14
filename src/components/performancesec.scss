@@ -1,0 +1,19 @@
+.performancesec {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 0;
+    grid-template-columns: 1.5fr 1fr; 
+    grid-template-rows: 70% 50%; 
+  }
+  
+  .chartsec {
+    grid-row: span 2; 
+  }
+
+  .matrix{
+    padding-top: 0.5rem;
+  }
+  
+  .alert {
+    margin: 0;
+  }
