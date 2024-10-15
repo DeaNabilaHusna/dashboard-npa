@@ -1,9 +1,23 @@
-@import '../css/variables';
+@import "../css/variables";
 
-.qualitysec
- {
-    display: grid;
-    grid-gap: 0.5rem;
-    margin: 1rem 1rem;
-    grid-template-columns: repeat(2, 1fr); 
+.qualitysec {
+  display: grid;
+  grid-gap: 0.5rem;
+  margin: 1rem 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 1300px) {
+  .qualitysec {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .qualitysec {
+    grid-row: span 2;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
 }

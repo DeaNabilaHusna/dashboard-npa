@@ -5,13 +5,13 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  box-sizing: border-box;
   width: 100%;
 }
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 img {
@@ -35,7 +35,8 @@ img {
   flex-shrink: 0;
 }
 
-.pages h1, .pages h5 {
+.pages h1,
+.pages h5 {
   line-height: 2rem;
 }
 
@@ -45,6 +46,9 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  position: absolute;
+  left: 50%;
+  right: 50%;
 }
 
 .flex-list {
@@ -68,7 +72,7 @@ li {
   padding: 0.5rem 1rem;
   margin: 1rem auto;
   color: $primary-color;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .export:hover {
@@ -84,20 +88,24 @@ li {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+.export:hover h3 {
+  color: $secondary-color;
+  transition: all 0.5s ease-out;
+}
+
 .export h3 {
   line-height: 1rem;
   margin: 0;
 }
 
-
-//RESPONSIVE 
-@media screen and (max-width: 768px) {
+//RESPONSIVE
+@media screen and (max-width: 1300px) {
   header {
     flex-direction: column;
     padding: 1rem;
   }
 
-  .pages{
+  .pages {
     text-align: center;
   }
   .nav {
@@ -105,15 +113,21 @@ li {
     gap: 1rem;
   }
 
+  .navigasi {
+    position: static;
+  }
+
   .flex-list {
     gap: 0.5rem;
   }
 
-  .pages, .navigasi, .export {
+  .pages,
+  .navigasi,
+  .export {
     flex-shrink: 0;
   }
 
-  .export{
+  .export {
     margin: 0.5rem;
   }
 }
