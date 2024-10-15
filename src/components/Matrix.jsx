@@ -45,22 +45,21 @@ export default function Matrix() {
           </tbody>
         </table>
         <table className="styled-table">
-          <thead>
-            <tr>
-              <th colSpan="2">
-                <th>May '23</th>
-                <th>May '24</th>
-              </th>
-              <th colSpan="2">
-                <th>May '23</th>
-                <th>May '24</th>
-              </th>
-              <th colSpan="2">
-                <th>May '23</th>
-                <th>May '24</th>
-              </th>
-            </tr>
-          </thead>
+        <thead>
+        <tr>
+            <th colSpan="2"></th> 
+            <th colSpan="2"></th> 
+            <th colSpan="2"></th> 
+        </tr>
+        <tr>
+            <th>May '23</th>
+            <th>May '24</th>
+            <th>May '23</th>
+            <th>May '24</th>
+            <th>May '23</th>
+            <th>May '24</th>
+        </tr>
+    </thead>
           <tbody>
             <tr>
               <td>
@@ -142,13 +141,14 @@ export default function Matrix() {
             </tr>
           </tbody>
         </table>
-        <table className="styled-table coba">
+        <table className="styled-table item">
           <thead>
-            <tr>
-              <th colSpan="2">
-                <th>May '23</th>
-                <th>May '24</th>
-              </th>
+          <tr>
+            <th colSpan="2"></th> 
+        </tr>
+        <tr>
+            <th>May '23</th>
+            <th>May '24</th>
             </tr>
           </thead>
           <tbody>
