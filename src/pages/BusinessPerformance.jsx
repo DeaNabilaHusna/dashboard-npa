@@ -5,9 +5,9 @@ import "./business.scss";
 
 export default function BusinessPerformance() {
   return (
-    <>
+    <div className="business">
       <Header pages={"Business Performance"} />
       <PerformanceSec />
-    </>
+    </div>
   );
 }
