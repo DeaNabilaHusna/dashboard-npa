@@ -7,7 +7,7 @@ export default function Header({ pages }) {
   return (
     <div className="header">
       <header>
-        <div>
+        <div className="logo">
           <img src={Logo} alt="logo" />
         </div>
       </header>
@@ -39,9 +39,6 @@ export default function Header({ pages }) {
           </ul>
         </div>
         <div>
-          {/* <Button name="Export .csv">
-            
-          </Button> */}
           <button className="export"><h3>Export .csv</h3></button>
         </div>
       </div>
