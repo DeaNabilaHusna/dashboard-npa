@@ -1,0 +1,13 @@
+.pages-sec {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: auto;
+  justify-content: center;
+  width: 100%;
+}
+
+Header {
+  width: 100%;
+  flex-shrink: 0;
+}

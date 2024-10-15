@@ -1,13 +1,12 @@
 import "../css/main.scss";
 import Header from "../components/Header";
-import OperationSec from "../components/OperationSec";
 import OpSec from "../components/OpSec";
+import "./pages.scss";
 export default function Driver() {
   return (
-    <>
+    <div className="pages-sec">
       <Header pages={"Operation"}/>
-      {/* <OperationSec /> */}
       <OpSec/>
-    </>
+    </div>
   );
 }

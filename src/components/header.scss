@@ -24,7 +24,7 @@ img {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  background-color: #e6e8ec;
+  background-color: $grey-color;
   padding: 0.5rem 1rem;
   align-items: center;
   position: relative;
@@ -66,7 +66,7 @@ li {
 
 // BUTTON EXPORT
 .export {
-  background-color: #fff;
+  background-color: $white-color;
   border: none;
   border-radius: 2rem;
   padding: 0.5rem 1rem;

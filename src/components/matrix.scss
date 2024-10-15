@@ -25,9 +25,9 @@
   margin: 0;
   display: inline-block;
   margin: auto;
-  border: 1px solid #ccc;
+  border: 1px solid $grey-color;
   width: fit-content;
-  background-color: rgb(229, 224, 224);
+  background-color: $grey-color;
 }
 
 .styled-table th,
