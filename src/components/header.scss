@@ -1,4 +1,4 @@
-@import "../css/variables";
+@use "../css/variables";
 header {
   margin: 1rem 0;
   display: flex;
@@ -24,7 +24,7 @@ img {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  background-color: $grey-color;
+  background-color: variables.$grey-color;
   padding: 0.5rem 1rem;
   align-items: center;
   position: relative;
@@ -66,12 +66,12 @@ li {
 
 // BUTTON EXPORT
 .export {
-  background-color: $white-color;
+  background-color: variables.$white-color;
   border: none;
   border-radius: 2rem;
   padding: 0.5rem 1rem;
   margin: 1rem auto;
-  color: $primary-color;
+  color: variables.$primary-color;
   flex-shrink: 0;
 }
 
@@ -89,7 +89,7 @@ li {
 }
 
 .export:hover h3 {
-  color: $secondary-color;
+  color: variables.$secondary-color;
   transition: all 0.5s ease-out;
 }
 

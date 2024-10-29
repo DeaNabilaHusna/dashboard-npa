@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables';
 
 .flex-list {
   display: flex;
@@ -9,37 +9,37 @@
 }
 
 h1{
-    color: $text-color;
+    color: variables.$text-color;
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 2rem;
 }
 
 h2{
-    color: $text-color;
+    color: variables.$text-color;
     font-weight: bold;
     font-size: 1.25rem;
     line-height: 2rem;
 }
 
 h3{
-    color: $text-color;
+    color: variables.$text-color;
     font-size: 1rem;
     line-height: 2rem;
 }
 
 h4{
-    color: $text-color;
+    color: variables.$text-color;
     font-size: 0.9rem;
     line-height: 2rem;
 }
 
 h5{
-    color: $text-color;
+    color: variables.$text-color;
     font-size: 0.8rem;
     line-height: 2rem;
 }
 p{
-    color: $text-color;
+    color: variables.$text-color;
     font-size: 0.75rem;
 }
