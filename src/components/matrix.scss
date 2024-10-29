@@ -1,4 +1,4 @@
-@import "../css/variables";
+@use "../css/variables";
 
 .matrix {
   margin: 0 1rem 0 0;
@@ -25,9 +25,9 @@
   margin: 0;
   display: inline-block;
   margin: auto;
-  border: 1px solid $grey-color;
+  border: 1px solid variables.$grey-color;
   width: fit-content;
-  background-color: $grey-color;
+  background-color: variables.$grey-color;
 }
 
 .styled-table th,
@@ -35,48 +35,48 @@
   padding: 0.5rem 0;
   // border: 1px solid #ccc;
   border: none;
-  color: $secondary-color;
+  color: variables.$secondary-color;
 }
 
 .styled-table th {
-  background-color: $danger-color;
-  color: $secondary-color;
+  background-color: variables.$danger-color;
+  color: variables.$secondary-color;
   font-weight: bold;
   padding: 0 0.5rem;
 }
 
 .styled-table thead tr:nth-child(1) th {
-  background-color: $danger-color;
-  color: $secondary-color;
+  background-color: variables.$danger-color;
+  color: variables.$secondary-color;
 }
 
 .styled-table thead tr:nth-child(2) th {
-  background-color: $danger-color;
+  background-color: variables.$danger-color;
 }
 
 .styled-table .utilization {
-  background-color: $danger-color;
-  color: $secondary-color;
+  background-color: variables.$danger-color;
+  color: variables.$secondary-color;
 }
 
 .styled-table td {
   font-size: 14px;
-  color: $primary-color;
+  color: variables.$primary-color;
 }
 
 .styled-table .negative {
-  color: $danger-color;
+  color: variables.$danger-color;
 }
 
 .styled-table td[colspan="2"] {
-  background-color: $danger-color;
+  background-color: variables.$danger-color;
 }
 
 .styled-table td[colspan="3"] {
-  background-color: $success-color;
-  color: $secondary-color;
+  background-color: variables.$success-color;
+  color: variables.$secondary-color;
 }
 
 .styled-table td.positive {
-  color: $success-color;
+  color: variables.$success-color;
 }

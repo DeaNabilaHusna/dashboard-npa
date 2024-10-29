@@ -1,4 +1,4 @@
-@import '../css/variables';
+@use '../css/variables';
 
 .box{
     padding: 0.5rem;
@@ -16,7 +16,7 @@ table {
 th {
     text-align: center; 
     padding: 15px; 
-    border-bottom: 3px solid $primary-color; 
+    border-bottom: 3px solid variables.$primary-color; 
 }
 
 td {
@@ -29,5 +29,5 @@ td {
     overflow-x: auto;
     width: 100%;
     height: auto;
-    background-color: $white-color;
+    background-color: variables.$white-color;
 }
