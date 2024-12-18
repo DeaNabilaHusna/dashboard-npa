@@ -1,21 +1,3 @@
-// import ChartSec from "./ChartSec";
-// import Alert from './Alert';
-// import Matrix from './Matrix';
-// import './performancesec.scss';
-
-// export default function PerformanceSec() {
-//   return (
-//     <div className="performancesec">
-//       <ChartSec
-//         name="Parameter (revenue, Payload, Traffic)"
-//       />
-//       <Matrix/>
-//       <Alert
-//       />
-//     </div>
-//   );
-// }
-
 import ChartSec from "./ChartSec";
 import Alert from './Alert';
 import Matrix from './Matrix';
