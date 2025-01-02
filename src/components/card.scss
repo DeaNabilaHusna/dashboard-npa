@@ -1,8 +1,8 @@
-@import '../css/variables';
+@use '../css/variables';
 
 .card-box{
     text-align: center;
-    background-color: $success-color;
+    background-color: variables.$success-color;
     border-radius: 10px;
     min-width: 5rem;
     min-height: fit-content;
@@ -17,17 +17,17 @@
 
 .card-box p{
     
-    color: $secondary-color;
+    color: variables.$secondary-color;
     line-height: 2rem;
 }
 
 .card-box h2{
-    color: $secondary-color;
+    color: variables.$secondary-color;
     line-height: 2rem;
 }
 
 .card-box h1{
-    color: $secondary-color;
+    color: variables.$secondary-color;
     line-height: 3rem;
     font-size: 3rem;
     font-weight: 400;

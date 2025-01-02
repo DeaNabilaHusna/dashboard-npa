@@ -1,8 +1,8 @@
-@import 'reset';
-@import 'variables';
-@import 'mixins';
-@import 'base';
+@use 'reset';
+@use 'variables' as vars;
+@use 'mixins';
+@use 'base';
 
 body{
-    font-family: $font-family;
+    font-family: vars.$font-family;
 }
