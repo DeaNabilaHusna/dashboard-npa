@@ -6,7 +6,7 @@ import "./pages.scss";
 
 export default function BusinessPerformance() {
   return (
-    <div className="pages-sec">
+    <div>
       <Header pages={"Business Performance"} />
       <PerformanceSec />
     </div>
