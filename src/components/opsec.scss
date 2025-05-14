@@ -1,31 +1,101 @@
-.op-sec .card{
+@use '../css/variables';
+
+.op-sec {
+  background-color: variables.$black-color;
+  color: variables.$white-color;
+
+  .card {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    grid-auto-flow: column;
-    margin : 1.5rem 1rem;
-}
+    margin: 1.5rem 1rem;
+  }
+
+  .sec-2 {
+    display: grid;
+    grid-template-columns: minmax(0, 70%) 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+
+    .cpu-load {
+      background-color: variables.$dark-grey-color;
+      border-radius: 1rem;
+      padding: 2rem;
+
+      .title {
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      &-item {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(2, auto);
+        gap: 1rem;
+        margin: 1rem;
+      }
+    }
+
+    .line-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+
+      .column-1 {
+        grid-row: span 2;
+        display: grid;
+        gap: 2rem;
+
+        &-item {
+          background-color: variables.$dark-grey-color;
+          padding: 1rem;
+          border-radius: 1rem;
+
+          .title {
+            color: white;
+            text-align: center;
+          }
+
+          table {
+            width: 100%;
+            background-color: variables.$success-color;
+            border-radius: 0.25rem;
+            border-collapse: collapse;
+            td {
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
+
+      .column-2 {
+        grid-row: span 3;
+        display: grid;
+        gap: 1rem;
+      }
+    }
+  }
 
 .graph {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr)); 
-    grid-template-rows: repeat(1, 1fr);
-    gap: 1rem;
-    grid-auto-flow: row;
-    max-width: 100%; 
-    box-sizing: border-box; 
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1rem;
+  grid-auto-flow: row;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.graph-2{
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr)); 
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-    grid-auto-flow: row;
-    max-width: 100%; 
-    box-sizing: border-box;
+.graph-2 {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  grid-auto-flow: row;
+  max-width: 100%;
+  box-sizing: border-box;
 }
-
+}
